@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\GitHub\\Templates\\APITemplate\\src\\Core\\CleanArchitectureTemplate.Application\\CleanArchitectureTemplate.Application.csproj": {}
+  },
+  "projects": {
+    "D:\\GitHub\\Templates\\APITemplate\\src\\Core\\CleanArchitectureTemplate.Application\\CleanArchitectureTemplate.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\Templates\\APITemplate\\src\\Core\\CleanArchitectureTemplate.Application\\CleanArchitectureTemplate.Application.csproj",
+        "projectName": "CleanArchitectureTemplate.Application",
+        "projectPath": "D:\\GitHub\\Templates\\APITemplate\\src\\Core\\CleanArchitectureTemplate.Application\\CleanArchitectureTemplate.Application.csproj",
+        "packagesPath": "C:\\Users\\Sunny\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\Templates\\APITemplate\\src\\Core\\CleanArchitectureTemplate.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Sunny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\SikshaNuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\GitHub\\Templates\\APITemplate\\src\\Core\\CleanArchitectureTemplate.Domain\\CleanArchitectureTemplate.Domain.csproj": {
+                "projectPath": "D:\\GitHub\\Templates\\APITemplate\\src\\Core\\CleanArchitectureTemplate.Domain\\CleanArchitectureTemplate.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\Templates\\APITemplate\\src\\Core\\CleanArchitectureTemplate.Domain\\CleanArchitectureTemplate.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\Templates\\APITemplate\\src\\Core\\CleanArchitectureTemplate.Domain\\CleanArchitectureTemplate.Domain.csproj",
+        "projectName": "CleanArchitectureTemplate.Domain",
+        "projectPath": "D:\\GitHub\\Templates\\APITemplate\\src\\Core\\CleanArchitectureTemplate.Domain\\CleanArchitectureTemplate.Domain.csproj",
+        "packagesPath": "C:\\Users\\Sunny\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\Templates\\APITemplate\\src\\Core\\CleanArchitectureTemplate.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Sunny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\SikshaNuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
