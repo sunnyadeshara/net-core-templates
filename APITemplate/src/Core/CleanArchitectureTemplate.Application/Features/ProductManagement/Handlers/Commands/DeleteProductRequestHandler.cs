@@ -21,9 +21,9 @@ namespace CleanArchitectureTemplate.Application.Features.ProductManagement.Handl
 
         public async Task<Unit> Handle(DeleteProductRequest request, CancellationToken cancellationToken)
         {
-            var product = _mapper.Map<Product>(request.ProductDTO);
+            var product = _mapper.Map<Product>(request.Id);
 
-            product = await _productRepository.Update(product);
+            product = await _productRepository.Delete(product);
 
             return Unit.Value;
         }
