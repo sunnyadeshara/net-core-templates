@@ -1,8 +1,9 @@
-﻿using MediatR;
+﻿using CleanArchitectureTemplate.Application.Responses;
+using MediatR;
 
 namespace CleanArchitectureTemplate.Application.Features.ProductManagement.Requests.Commands
 {
-    public class DeleteProductRequest : IRequest<Unit>
+    public class DeleteProductCommand : IRequest<BaseCommandResponse>
     {
         public int Id { get; set; }
     }

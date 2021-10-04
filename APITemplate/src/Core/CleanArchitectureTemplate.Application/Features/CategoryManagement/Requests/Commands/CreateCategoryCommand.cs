@@ -1,9 +1,10 @@
 ﻿using CleanArchitectureTemplate.Application.DTOs.Category;
+using CleanArchitectureTemplate.Application.Responses;
 using MediatR;
 
 namespace CleanArchitectureTemplate.Application.Features.CategoryManagement.Requests.Handlers
 {
-    public class CreateCategoryRequest : IRequest<int>
+    public class CreateCategoryCommand : IRequest<BaseCommandResponse>
     {
         public CategoryDTO CategoryDTO { get; set; }
     }

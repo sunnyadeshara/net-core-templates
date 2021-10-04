@@ -1,8 +1,5 @@
 ﻿using CleanArchitectureTemplate.Application.Contracts;
 using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CleanArchitectureTemplate.Application.DTOs.Product.Validators
 {
@@ -12,6 +9,15 @@ namespace CleanArchitectureTemplate.Application.DTOs.Product.Validators
 
         public ProductDTOValidator(ICategoryRepository categoryRepository)
         {
+            _categoryRepository = categoryRepository;
+
+            RuleSet("UpdateProduct", () =>
+            {
+                RuleFor(x => x.Id)
+                .GreaterThan(0)
+                .WithMessage("{PropertyName} is required.");
+            });
+
             RuleFor(x => x.Name)
                 .NotEmpty().WithMessage("{PropertyName} is required.")
                 .NotNull()
@@ -21,7 +27,8 @@ namespace CleanArchitectureTemplate.Application.DTOs.Product.Validators
             RuleFor(x => x.CategoryId)
                 .GreaterThan(0)
                 .WithMessage("{PropertyName} is required.")
-                .MustAsync(async (id, token) => {
+                .MustAsync(async (id, token) =>
+                {
                     var categoryExists = await _categoryRepository.Exists(id);
                     return !categoryExists;
                 }).WithMessage("{PropertyName} does not exist.");
