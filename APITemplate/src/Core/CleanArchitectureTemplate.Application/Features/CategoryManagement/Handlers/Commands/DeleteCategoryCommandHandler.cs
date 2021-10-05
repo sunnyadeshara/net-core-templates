@@ -1,9 +1,6 @@
-﻿using AutoMapper;
-using CleanArchitectureTemplate.Application.Contracts;
-using CleanArchitectureTemplate.Application.Exceptions;
+﻿using CleanArchitectureTemplate.Application.Contracts.Persistence;
 using CleanArchitectureTemplate.Application.Features.CategoryManagement.Requests.Commands;
 using CleanArchitectureTemplate.Application.Responses;
-using CleanArchitectureTemplate.Domain;
 using MediatR;
 using System.Threading;
 using System.Threading.Tasks;

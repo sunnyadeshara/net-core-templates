@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CleanArchitectureTemplate.Application.Contracts;
+using CleanArchitectureTemplate.Application.Contracts.Persistence;
 using CleanArchitectureTemplate.Application.DTOs.Product;
 using CleanArchitectureTemplate.Application.Features.ProductManagement.Requests.Commands;
 using CleanArchitectureTemplate.Application.Responses;
@@ -9,7 +9,6 @@ using MediatR;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using ValidationException = CleanArchitectureTemplate.Application.Exceptions.ValidationException;
 
 namespace CleanArchitectureTemplate.Application.Features.ProductManagement.Handlers.Commands
 {
@@ -43,7 +42,7 @@ namespace CleanArchitectureTemplate.Application.Features.ProductManagement.Handl
 
             var product = _mapper.Map<Product>(request.ProductDTO);
 
-            product = await _productRepository.Update(product);
+            await _productRepository.Update(product);
 
             response.IsSuccessful = true;
             response.Message = "Product updation successful";

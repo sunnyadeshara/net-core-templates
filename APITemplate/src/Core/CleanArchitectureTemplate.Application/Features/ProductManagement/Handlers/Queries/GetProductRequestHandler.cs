@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CleanArchitectureTemplate.Application.Contracts;
+using CleanArchitectureTemplate.Application.Contracts.Persistence;
 using CleanArchitectureTemplate.Application.DTOs.Product;
 using CleanArchitectureTemplate.Application.Features.ProductManagement.Requests.Queries;
 using MediatR;

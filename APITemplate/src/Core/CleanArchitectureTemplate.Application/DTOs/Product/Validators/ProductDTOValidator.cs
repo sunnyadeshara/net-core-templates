@@ -1,4 +1,4 @@
-﻿using CleanArchitectureTemplate.Application.Contracts;
+﻿using CleanArchitectureTemplate.Application.Contracts.Persistence;
 using FluentValidation;
 
 namespace CleanArchitectureTemplate.Application.DTOs.Product.Validators

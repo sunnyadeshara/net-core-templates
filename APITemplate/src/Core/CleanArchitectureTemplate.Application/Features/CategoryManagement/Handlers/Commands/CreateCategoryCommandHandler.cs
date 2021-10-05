@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CleanArchitectureTemplate.Application.Contracts;
+using CleanArchitectureTemplate.Application.Contracts.Persistence;
 using CleanArchitectureTemplate.Application.DTOs.Category;
 using CleanArchitectureTemplate.Application.Features.CategoryManagement.Requests.Handlers;
 using CleanArchitectureTemplate.Application.Responses;

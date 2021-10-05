@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
-using CleanArchitectureTemplate.Application.Contracts;
-using CleanArchitectureTemplate.Application.Exceptions;
+using CleanArchitectureTemplate.Application.Contracts.Persistence;
 using CleanArchitectureTemplate.Application.Features.ProductManagement.Requests.Commands;
 using CleanArchitectureTemplate.Application.Responses;
 using CleanArchitectureTemplate.Domain;

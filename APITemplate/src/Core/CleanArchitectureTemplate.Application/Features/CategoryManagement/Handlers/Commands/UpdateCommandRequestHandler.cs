@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CleanArchitectureTemplate.Application.Contracts;
+using CleanArchitectureTemplate.Application.Contracts.Persistence;
 using CleanArchitectureTemplate.Application.DTOs.Category;
 using CleanArchitectureTemplate.Application.Features.CategoryManagement.Requests.Commands;
 using CleanArchitectureTemplate.Application.Responses;
@@ -9,7 +9,6 @@ using MediatR;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using ValidationException = CleanArchitectureTemplate.Application.Exceptions.ValidationException;
 
 namespace CleanArchitectureTemplate.Application.Features.CategoryManagement.Handlers.Commands
 {
@@ -43,7 +42,7 @@ namespace CleanArchitectureTemplate.Application.Features.CategoryManagement.Hand
 
             var category = _mapper.Map<Category>(request.CategoryDTO);
 
-            category = await _categoryRepository.Update(category);
+            await _categoryRepository.Update(category);
 
             response.IsSuccessful = true;
             response.Message = "Category updation successful";
