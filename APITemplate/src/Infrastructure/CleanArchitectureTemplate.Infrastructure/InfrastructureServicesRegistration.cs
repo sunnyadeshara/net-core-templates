@@ -3,9 +3,6 @@ using CleanArchitectureTemplate.Application.Models;
 using CleanArchitectureTemplate.Infrastructure.Mail;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CleanArchitectureTemplate.Infrastructure
 {
