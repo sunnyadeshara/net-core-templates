@@ -19,11 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureTemplate.I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureTemplate.Persistence", "src\Infrastructure\CleanArchitectureTemplate.Persistence\CleanArchitectureTemplate.Persistence.csproj", "{408148A7-7CB3-49AC-B80F-26AC0A7D06DC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureTemplate.Tests", "test\CleanArchitectureTemplate.Tests\CleanArchitectureTemplate.Tests.csproj", "{BB5F2A9A-AFAE-4F2D-BCEA-85E27165F0B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureTemplate.UnitTests", "test\CleanArchitectureTemplate.Tests\CleanArchitectureTemplate.UnitTests.csproj", "{BB5F2A9A-AFAE-4F2D-BCEA-85E27165F0B0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{5C9FCF01-AB47-456F-8C03-18622FE4E59F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureTemplate.API", "src\API\CleanArchitectureTemplate.API\CleanArchitectureTemplate.API.csproj", "{4CB923C0-20CA-4E13-9352-0DF6BB2C0258}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitectureTemplate.API", "src\API\CleanArchitectureTemplate.API\CleanArchitectureTemplate.API.csproj", "{4CB923C0-20CA-4E13-9352-0DF6BB2C0258}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
