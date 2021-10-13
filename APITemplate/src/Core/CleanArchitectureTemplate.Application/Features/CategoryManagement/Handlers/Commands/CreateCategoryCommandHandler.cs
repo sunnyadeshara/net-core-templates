@@ -35,6 +35,7 @@ namespace CleanArchitectureTemplate.Application.Features.CategoryManagement.Hand
                 response.IsSuccessful = false;
                 response.Message = "Category creation failed";
                 response.Errors = validationResult.Errors.Select(x => x.ErrorMessage).ToList();
+                return response;
             }
 
             var category = _mapper.Map<Category>(request.CategoryDTO);

@@ -51,6 +51,10 @@ namespace CleanArchitectureTemplate.UnitTests.CategoryManagement.Commands
 
             Assert.IsType<BaseCommandResponse>(result);
             Assert.True(result.IsSuccessful);
+
+            var categories = await _mockRepo.Object.GetAll();
+
+            Assert.True(categories.Count == 3);
         }
     }
 }

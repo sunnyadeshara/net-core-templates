@@ -24,6 +24,7 @@ namespace CleanArchitectureTemplate.Application.Features.CategoryManagement.Hand
             {
                 response.IsSuccessful = false;
                 response.Message = "Category does not exist";
+                return response;
             }
 
             await _categoryRepository.Delete(category);

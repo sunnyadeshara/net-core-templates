@@ -38,6 +38,7 @@ namespace CleanArchitectureTemplate.Application.Features.ProductManagement.Handl
                 response.IsSuccessful = false;
                 response.Message = "Product updation failed";
                 response.Errors = validationResult.Errors.Select(x => x.ErrorMessage).ToList();
+                return response;
             }
 
             var product = _mapper.Map<Product>(request.ProductDTO);

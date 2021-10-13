@@ -54,6 +54,10 @@ namespace CleanArchitectureTemplate.UnitTests.ProductManagement.Commands
 
             Assert.IsType<BaseCommandResponse>(result);
             Assert.True(result.IsSuccessful);
+
+            var products = await _mockRepo.Object.GetAll();
+
+            Assert.True(products.Count == 3);
         }
     }
 }

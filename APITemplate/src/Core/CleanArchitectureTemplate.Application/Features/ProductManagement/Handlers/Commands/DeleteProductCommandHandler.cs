@@ -29,6 +29,7 @@ namespace CleanArchitectureTemplate.Application.Features.ProductManagement.Handl
             {
                 response.IsSuccessful = false;
                 response.Message = "Category does not exist";
+                return response;
             }
 
             await _productRepository.Delete(product);
