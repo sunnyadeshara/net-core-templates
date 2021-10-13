@@ -10,7 +10,9 @@ namespace CleanArchitectureTemplate.Application.AutoMapperProfiles
         public MainProfile()
         {
             CreateMap<Category, CategoryDTO>().ReverseMap();
+            CreateMap<Category, CategoryListDTO>().ReverseMap();
             CreateMap<Product, ProductDTO>().ReverseMap();
+            CreateMap<Product, ProductListDTO>().ReverseMap();
         }
     }
 }

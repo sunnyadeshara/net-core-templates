@@ -26,4 +26,9 @@
     <ProjectReference Include="..\..\src\Core\CleanArchitectureTemplate.Application\CleanArchitectureTemplate.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ProductManagement\Commands\" />
+    <Folder Include="ProductManagement\Queries\" />
+  </ItemGroup>
+
 </Project>
