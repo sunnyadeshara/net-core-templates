@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace CleanArchitectureTemplate.Persistence
 {
-    public class CleanArchitectureTemplateDbContext : DbContext
+    public class CleanArchitectureTemplateDbContext : AuditableDbContext
     {
         public CleanArchitectureTemplateDbContext(DbContextOptions<CleanArchitectureTemplateDbContext> options)
             : base(options)
         {
-
         }
 
         public DbSet<Category> Categories { get; set; }
@@ -21,21 +20,6 @@ namespace CleanArchitectureTemplate.Persistence
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CleanArchitectureTemplateDbContext).Assembly);
-        }
-
-        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
-        {
-            foreach (var entry in ChangeTracker.Entries<BaseDomainEntity>())
-            {
-                entry.Entity.LastModified = DateTime.Now;
-
-                if (entry.State == EntityState.Added)
-                {
-                    entry.Entity.DateCreated = DateTime.Now;
-                }
-            }
-
-            return base.SaveChangesAsync(cancellationToken);
         }
     }
 }

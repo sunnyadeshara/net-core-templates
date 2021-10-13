@@ -1,3 +1,4 @@
+using CleanArchitectureTemplate.API.Middleware;
 using CleanArchitectureTemplate.Application;
 using CleanArchitectureTemplate.Infrastructure;
 using CleanArchitectureTemplate.Persistence;
@@ -50,6 +51,8 @@ namespace CleanArchitectureTemplate.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CleanArchitectureTemplate.API v1"));
             }
+
+            app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseHttpsRedirection();
 

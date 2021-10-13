@@ -1,8 +1,6 @@
 ﻿using CleanArchitectureTemplate.Application.Contracts.Persistence;
 using CleanArchitectureTemplate.Domain;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CleanArchitectureTemplate.Persistence.Repositories
