@@ -6,10 +6,7 @@ using CleanArchitectureTemplate.Application.Features.CategoryManagement.Handlers
 using CleanArchitectureTemplate.Application.Features.CategoryManagement.Requests.Queries;
 using CleanArchitectureTemplate.UnitTests.Mocks;
 using Moq;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
@@ -25,7 +22,7 @@ namespace CleanArchitectureTemplate.UnitTests.CategoryManagement.Queries
         {
             _mockRepo = MockCategoryRepository.GetCategoryRepository();
 
-            var mapperConfig = new MapperConfiguration(c => 
+            var mapperConfig = new MapperConfiguration(c =>
             {
                 c.AddProfile<MainProfile>();
             });

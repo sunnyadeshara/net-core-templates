@@ -29,7 +29,7 @@ namespace CleanArchitectureTemplate.UnitTests.Mocks
 
             mockRepo.Setup(x => x.GetAll()).ReturnsAsync(categories);
 
-            mockRepo.Setup(x => x.Add(It.IsAny<Category>())).ReturnsAsync((Category category) => 
+            mockRepo.Setup(x => x.Add(It.IsAny<Category>())).ReturnsAsync((Category category) =>
             {
                 categories.Add(category);
                 return category;
