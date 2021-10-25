@@ -4,14 +4,14 @@ using CleanArchitectureTemplate.Application.Contracts.Persistence;
 using CleanArchitectureTemplate.Application.DTOs.Category;
 using CleanArchitectureTemplate.Application.Features.CategoryManagement.Handlers.Queries;
 using CleanArchitectureTemplate.Application.Features.CategoryManagement.Requests.Queries;
-using CleanArchitectureTemplate.UnitTests.Mocks;
+using CleanArchitectureTemplate.UnitTests.Features.Mocks;
 using Moq;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace CleanArchitectureTemplate.UnitTests.CategoryManagement.Queries
+namespace CleanArchitectureTemplate.UnitTests.Features.CategoryManagement.Queries
 {
     public class GetCategoryListRequestHandlerTests
     {

@@ -4,14 +4,14 @@ using CleanArchitectureTemplate.Application.Contracts.Persistence;
 using CleanArchitectureTemplate.Application.DTOs.Product;
 using CleanArchitectureTemplate.Application.Features.ProductManagement.Handlers.Queries;
 using CleanArchitectureTemplate.Application.Features.ProductManagement.Requests.Queries;
-using CleanArchitectureTemplate.UnitTests.Mocks;
+using CleanArchitectureTemplate.UnitTests.Features.Mocks;
 using Moq;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace CleanArchitectureTemplate.UnitTests.ProductManagement.Queries
+namespace CleanArchitectureTemplate.UnitTests.Features.ProductManagement.Queries
 {
     public class GetProductListRequestHandlerTests
     {

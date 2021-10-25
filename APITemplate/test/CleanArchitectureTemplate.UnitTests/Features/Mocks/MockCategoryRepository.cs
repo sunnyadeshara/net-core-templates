@@ -3,7 +3,7 @@ using CleanArchitectureTemplate.Domain;
 using Moq;
 using System.Collections.Generic;
 
-namespace CleanArchitectureTemplate.UnitTests.Mocks
+namespace CleanArchitectureTemplate.UnitTests.Features.Mocks
 {
     public static class MockCategoryRepository
     {

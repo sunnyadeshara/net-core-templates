@@ -6,14 +6,14 @@ using CleanArchitectureTemplate.Application.DTOs.Product.Validators;
 using CleanArchitectureTemplate.Application.Features.ProductManagement.Handlers.Commands;
 using CleanArchitectureTemplate.Application.Features.ProductManagement.Requests.Commands;
 using CleanArchitectureTemplate.Application.Responses;
-using CleanArchitectureTemplate.UnitTests.Mocks;
+using CleanArchitectureTemplate.UnitTests.Features.Mocks;
 using FluentValidation;
 using Moq;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace CleanArchitectureTemplate.UnitTests.ProductManagement.Commands
+namespace CleanArchitectureTemplate.UnitTests.Features.ProductManagement.Commands
 {
     public class CreateProductCommandHandlerTests
     {

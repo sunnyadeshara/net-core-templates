@@ -1,9 +1,5 @@
 ﻿using CleanArchitectureTemplate.Domain;
-using CleanArchitectureTemplate.Domain.Common;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace CleanArchitectureTemplate.Persistence
 {

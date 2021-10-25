@@ -27,7 +27,7 @@ namespace CleanArchitectureTemplate.API.Controllers
             return Ok(categories);
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<ActionResult<CategoryDTO>> Get(int id)
         {
             var query = new GetCategoryRequest { Id = id };

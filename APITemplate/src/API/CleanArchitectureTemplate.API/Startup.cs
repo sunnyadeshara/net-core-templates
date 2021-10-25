@@ -52,7 +52,8 @@ namespace CleanArchitectureTemplate.API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CleanArchitectureTemplate.API v1"));
             }
 
-            app.UseMiddleware<ExceptionMiddleware>();
+            // app.UseMiddleware<ExceptionMiddleware>();
+            app.UseFluentValidationExceptionHandler();
 
             app.UseHttpsRedirection();
 

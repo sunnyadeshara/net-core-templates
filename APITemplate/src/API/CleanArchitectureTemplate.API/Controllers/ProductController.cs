@@ -27,7 +27,7 @@ namespace CleanArchitectureTemplate.API.Controllers
             return Ok(products);
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<ActionResult<ProductDTO>> Get(int id)
         {
             var query = new GetProductRequest { Id = id };

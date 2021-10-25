@@ -6,19 +6,18 @@ using CleanArchitectureTemplate.Application.DTOs.Category.Validators;
 using CleanArchitectureTemplate.Application.Features.CategoryManagement.Handlers.Commands;
 using CleanArchitectureTemplate.Application.Features.CategoryManagement.Requests.Commands;
 using CleanArchitectureTemplate.Application.Responses;
-using CleanArchitectureTemplate.UnitTests.Mocks;
+using CleanArchitectureTemplate.UnitTests.Features.Mocks;
 using FluentValidation;
 using Moq;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace CleanArchitectureTemplate.UnitTests.CategoryManagement.Commands
+namespace CleanArchitectureTemplate.UnitTests.Features.CategoryManagement.Commands
 {
     public class CreateCategoryCommandHandlerTests
     {
         private readonly IMapper _mapper;
-        private readonly IValidator<CategoryDTO> _validator;
         private readonly Mock<ICategoryRepository> _mockRepo;
         private readonly CategoryDTO _categoryDTO;
 
@@ -30,8 +29,6 @@ namespace CleanArchitectureTemplate.UnitTests.CategoryManagement.Commands
             });
 
             _mapper = mapperConfig.CreateMapper();
-
-            _validator = new CategoryDTOValidator();
 
             _mockRepo = MockCategoryRepository.GetCategoryRepository();
 
@@ -45,7 +42,7 @@ namespace CleanArchitectureTemplate.UnitTests.CategoryManagement.Commands
         [Fact]
         public async Task CreateCategoryTest()
         {
-            var handler = new CreateCategoryCommandHandler(_mockRepo.Object, _validator, _mapper);
+            var handler = new CreateCategoryCommandHandler(_mockRepo.Object, _mapper);
 
             var result = await handler.Handle(new CreateCategoryCommand() { CategoryDTO = _categoryDTO }, CancellationToken.None);
 
