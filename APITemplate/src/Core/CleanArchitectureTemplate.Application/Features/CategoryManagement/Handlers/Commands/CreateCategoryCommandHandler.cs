@@ -1,12 +1,9 @@
 ﻿using AutoMapper;
 using CleanArchitectureTemplate.Application.Contracts.Persistence;
-using CleanArchitectureTemplate.Application.DTOs.Category;
 using CleanArchitectureTemplate.Application.Features.CategoryManagement.Requests.Commands;
 using CleanArchitectureTemplate.Application.Responses;
 using CleanArchitectureTemplate.Domain;
-using FluentValidation;
 using MediatR;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 

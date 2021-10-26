@@ -2,12 +2,10 @@
 using CleanArchitectureTemplate.Application.AutoMapperProfiles;
 using CleanArchitectureTemplate.Application.Contracts.Persistence;
 using CleanArchitectureTemplate.Application.DTOs.Category;
-using CleanArchitectureTemplate.Application.DTOs.Category.Validators;
 using CleanArchitectureTemplate.Application.Features.CategoryManagement.Handlers.Commands;
 using CleanArchitectureTemplate.Application.Features.CategoryManagement.Requests.Commands;
 using CleanArchitectureTemplate.Application.Responses;
 using CleanArchitectureTemplate.UnitTests.Features.Mocks;
-using FluentValidation;
 using Moq;
 using System.Threading;
 using System.Threading.Tasks;
