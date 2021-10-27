@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Me",
+  "classifications": [ "Common", "Web", "C#9" ],
+  "identity": "CleanArchitecture.Web",
+  "name": "Clean architecture templates: Web",
+  "shortName": "cleanarchitectureweb",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "CleanArchitectureTemplate"
+}
